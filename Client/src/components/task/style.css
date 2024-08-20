@@ -1,0 +1,42 @@
+.card{
+  width: 35rem;
+  padding: 1rem;
+  background: rgba(66, 66, 66, 0.667);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & .contain{
+    width: 70%;
+    & .card-title{
+      font-size: 1.2rem;
+    }
+    & .card-description{
+      margin: 1rem 0;
+      font-size: .9rem;
+    }
+  }
+  & .container-btn{
+    display: flex;
+    gap: .6rem;
+    & button{
+      width: 4rem;
+      padding: .3rem ;
+      color: #fff;
+      border: none;
+      border-radius: .3rem;
+      font-weight: 800;
+    }
+    & .btn-edit{
+      background: rgb(197, 121, 45);
+    }
+    & button:hover{
+      box-shadow: 0 0 5px #494949;
+    }
+    & button:active{
+      box-shadow: inset 0 0 5px #fff;
+    }
+    & .btn-delete{
+      background: rgb(205, 2, 2);
+    }
+  }
+}
